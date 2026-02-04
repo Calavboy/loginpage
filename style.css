@@ -7,7 +7,7 @@
     font-size: "Poppins", sans-serif;
 }
 body{
-    background-image: url(art\ background.png);
+    background-color: rgb(92, 92, 92);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
