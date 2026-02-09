@@ -42,35 +42,24 @@
 </body>
 <script>
 document.getElementById("submit").addEventListener("click", function () {
-    const email = document.getElementById("email").value;
-    const pass = document.getElementById("password").value;
+    const emailInput = document.getElementById("email").value;
+    const passInput = document.getElementById("password").value;
 
-  
-    const correctEmail = "test";
-    const correctPass = "test";
-    
 
-    if (email === correctEmail && pass === correctPass) {
-        window.location.href = "welcome.html"; 
+    const users = [
+        { email: "test", pass: "test" },
+        { email: "testr", pass: "testr" },
+        { email: "admin", pass: "password" }
+    ];
+
+    const authenticatedUser = users.find(u => u.email === emailInput && u.pass === passInput);
+
+    if (authenticatedUser) {
+        window.location.href = "welcome.html";
     } else {
         alert("Wrong email or password.");
     }
 });
-document.getElementById("submit").addEventListener("click", function () {
-    const email = document.getElementById("email").value;
-    const pass = document.getElementById("password").value;
 
-  
-    const correctemails = "chris";
-    const correctpasss = "cala";
-    
-
-    if (email === correctemails && pass === correctpasss) {
-        window.location.href = "welcome.html"; 
-    } else {
-        alert("Wrong email or password.");
-    }
-});
 </script>
-
 </html>
