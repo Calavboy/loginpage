@@ -7,7 +7,7 @@
     font-size: "Poppins", sans-serif;
 }
 body{
-    background-color: rgb(92, 92, 92);
+    background-image: url(loginpageback.png);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
