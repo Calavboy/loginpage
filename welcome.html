@@ -3,50 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>welcome</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+
+        .fixed-bg {
+
+            background-image: url(loginpageback.png);
+            
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .scrolling-content {
+            background-color: #1a1a1a;
+            padding: 100px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            background: #2a2a2a;
+            max-width: 800px;
+            margin-bottom: 50px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .fixed-bg-2 {
+            background-image: url(loginpageback.png);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            height: 60vh;
+        }
+    </style>
 </head>
-
-<style>
-
-body {
-    background-color: black;
- 
-}
-
-
-
-h1 {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.0001px;
-    color:black
-}
-
-
-
-.center-container{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width: 100wh;
-    text-align: center;
-    
-}
-
-
-</style>
 <body>
-    <h1> Welcome To Our Webpage</h1>
-    <div class="center-container">
-      <p style="color: white;">We are curently working on the page please come back soon to check it out</p>
-     </div>
 
+    <div class="fixed-bg">
+        <div class="hero-text">
+            <h1>Welcome</h1>
+            <p>To The Brand New Era Of Websites</p>
+        </div>
+    </div>
 
-    </body>
+    <div class="scrolling-content">
+        <div class="card">
+            <h2>My Name Is Louie</h2>
+            <p>If you are seeing this website right now it means you logged in!</p>
+        </div>
 
- 
+        <div class="card">
+            <h2>More Coming Soon!</h2>
+            <p>This is just the start! This page will keep growing and we will keep adding new fun things!</p>
+        </div>
+    </div>
+
+    <div class="fixed-bg-2"></div>
+
+    <div class="scrolling-content">
+        <div class="card">
+            <h2>End of the Page But Not Teh End Of The Potenial</h2>
+            <p>Please come back and check out the page</p>
+        </div>
+    </div>
+
 </body>
 </html>
